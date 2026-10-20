@@ -17,8 +17,23 @@ public class Filme {
     private Long idFilme;
 
     @NotBlank 
-    @Column(length = 40)
+    @Column(unique = true, length = 40)
     private String tituloFilme;
 
-    
+    @NotBlank 
+    @Column(length = 30)
+    private String diretorFilme;
+
+    @NotBlank 
+    @Column(length = 30)
+    private String generoFilme;
+
+    @NotBlank 
+    @Column(length = 30)
+    private int duracaoFilme;
+
+    public void setIdFilme(Long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setIdFilme'");
+    }
 }
